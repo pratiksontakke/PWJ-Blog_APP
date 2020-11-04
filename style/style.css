@@ -14,10 +14,13 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url(/assets/banner.jpeg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
+}
+
+.home-page header {
+	background-image: url(/assets/banner.jpeg);
 }
 
 header > * {
@@ -119,6 +122,10 @@ header::after {
 	text-align: justify;
 }
 
+a.post-link {
+	text-decoration: none;
+}
+
 footer {
 	min-height: 100px;
 	background-color: #eaecee70;
@@ -153,12 +160,8 @@ footer {
 
 .navigation a {
 	text-decoration: none;
-	color: #004186;
+	/* color: #004186; */
 	border: 1px solid #004186;
 	border-radius: 4px;
 	padding: 5px 8px;
-}
-
-a {
-	text-decoration: none;
 }
