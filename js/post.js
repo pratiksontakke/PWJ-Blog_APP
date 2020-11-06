@@ -17,7 +17,7 @@ const getPostIdParam = () => {
 	return urlParams.get("id");
 };
 
-const getPost = (singleBlogPosts) => {
+const getPost = () => {
 	const postId = getPostIdParam();
 	const url = `${API_URL}${postId}`;
 	fetch(url, {
